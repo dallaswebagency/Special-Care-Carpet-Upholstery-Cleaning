@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Special Care Carpet &amp; Upholstery Cleaning | Calgary</title>
+<meta name="description" content="Professional green carpet and upholstery cleaning in Calgary, Airdrie, Chestermere, Okotoks, Cochrane, Black Diamond and High River since 1998.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#04590a;
+  --leaf:#00903c;
+  --azure:#006cb4;
+  --ink:#10281a;
+  --slate:#788478;
+  --cream:#f6f8f1;
+  --mist:#e5f0f5;
+  --white:#fff;
+  --line:rgba(16,40,26,.14);
+  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --body:"Figtree",system-ui,sans-serif;
+  --wrap:min(1240px,100% - 48px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:var(--wrap);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.04;letter-spacing:-.02em;font-weight:800}
+.kicker{font-size:.8rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--leaf);display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:34px;height:3px;border-radius:3px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:700;font-size:.98rem;border:2px solid transparent;transition:transform .2s,background .2s,color .2s,border-color .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--forest);color:#fff}
+.btn-main:hover{background:var(--leaf)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-white{background:#fff;color:var(--forest)}
+.btn-white:hover{background:var(--cream)}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--forest)}
+.btn svg{width:18px;height:18px}
+:focus-visible{outline:3px solid var(--azure);outline-offset:3px}
+
+/* top bar */
+.topbar{background:var(--forest);color:#e9f6e9;font-size:.86rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.topbar b{color:#fff}
+.topbar a{font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.45)}
+
+/* header */
+.head{position:sticky;top:0;z-index:50;background:rgba(246,248,241,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.logo img{height:58px;width:auto}
+.nav ul{display:flex;gap:4px;align-items:center}
+.nav a{display:block;padding:8px 11px;border-radius:8px;font-weight:600;font-size:.92rem;white-space:nowrap}
+.nav a:hover{background:var(--mist);color:var(--azure)}
+.nav a.on{color:var(--leaf)}
+.head .call{padding:11px 20px;font-size:.92rem}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:2px solid var(--ink);background:none;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:20px;height:2px;background:var(--ink);transition:.2s}
+.burger[aria-expanded=true] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded=true] i:nth-child(2){opacity:0}
+.burger[aria-expanded=true] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:64px 0 120px;background:var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;position:relative}
+.hero h1{font-size:clamp(2.3rem,4.3vw,3.9rem);margin:20px 0 24px}
+.hero h1 em{font-style:normal;color:var(--azure);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:-.04em;height:.12em;background:var(--leaf);border-radius:8px;transform:rotate(-1.2deg)}
+.hero p.lead{font-size:1.18rem;max-width:34rem;color:#2d4636}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .tag{margin-top:38px;display:flex;align-items:center;gap:16px}
+.hero .tag img{height:74px;width:auto;border-radius:6px}
+.hero .tag span{font-size:.92rem;color:var(--slate);max-width:15rem;line-height:1.4}
+.art{position:relative;min-height:600px}
+.rings{position:absolute;right:-90px;top:50%;width:760px;height:760px;transform:translateY(-50%);pointer-events:none;z-index:0}
+.rings i{position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(0,108,180,.22)}
+.rings i:nth-child(2){inset:70px}
+.rings i:nth-child(3){inset:140px}
+.rings i:nth-child(4){inset:210px;border-color:rgba(0,144,60,.3)}
+.art .main{position:absolute;right:0;top:0;width:78%;height:540px;clip-path:polygon(0 0,calc(100% - 90px) 0,100% 90px,100% 100%,0 100%);z-index:1}
+.art .main img{width:100%;height:100%;object-fit:cover;object-position:34% 50%}
+.art .drop{position:absolute;left:0;bottom:0;width:250px;height:250px;border-radius:50%;overflow:hidden;border:10px solid var(--cream);z-index:2;box-shadow:0 20px 40px -18px rgba(16,40,26,.45)}
+.art .drop img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;right:-10px;bottom:30px;width:150px;height:150px;border-radius:50%;background:var(--forest);color:#fff;z-index:3;display:grid;place-items:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 26s linear infinite}
+.badge svg text{font-family:var(--body);font-size:11.5px;font-weight:700;letter-spacing:.2em;fill:#cfe9cf;text-transform:uppercase}
+.badge b{font-family:var(--display);font-size:2rem;line-height:1;text-align:center}
+.badge b small{display:block;font-family:var(--body);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#cfe9cf;margin-bottom:3px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.swoosh{position:absolute;left:0;right:0;bottom:-1px;line-height:0}
+.swoosh svg{width:100%;height:90px;display:block}
+
+/* services index */
+.services{background:var(--white);padding:40px 0 110px}
+.s-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.s-head h2{font-size:clamp(2.2rem,4.2vw,3.6rem);margin-top:14px}
+.s-head p{max-width:24rem;color:#3c5445}
+.s-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.idx li{border-top:1px solid var(--line)}
+.idx li:last-child{border-bottom:1px solid var(--line)}
+.idx button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:54px 1fr 28px;align-items:center;gap:8px;padding:22px 0}
+.idx .n{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--slate)}
+.idx .t{font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,2.4vw,2rem);letter-spacing:-.02em;transition:color .2s,transform .25s}
+.idx .pl{width:28px;height:28px;position:relative}
+.idx .pl::before,.idx .pl::after{content:"";position:absolute;left:5px;right:5px;top:13px;height:2px;background:var(--ink);transition:.25s}
+.idx .pl::after{transform:rotate(90deg)}
+.idx li.open .pl::after{transform:rotate(0)}
+.idx li.open .t{color:var(--azure);transform:translateX(8px)}
+.idx .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.idx li.open .body{grid-template-rows:1fr}
+.idx .body>div{overflow:hidden;padding-left:62px}
+.idx .body p{color:#3c5445;max-width:32rem;padding-bottom:6px}
+.idx .body a{display:inline-flex;margin:12px 0 26px;font-weight:700;color:var(--forest);border-bottom:2px solid var(--leaf)}
+.idx .body a:hover{color:var(--azure);border-color:var(--azure)}
+.idx .m-img{display:none}
+.pv{position:sticky;top:110px}
+.pv figure{position:relative;aspect-ratio:4/5;background:var(--mist);overflow:hidden;border-radius:6px 90px 6px 6px}
+.pv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .5s,transform .8s}
+.pv img.on{opacity:1;transform:scale(1)}
+.pv figcaption{position:absolute;left:0;bottom:0;background:var(--forest);color:#fff;padding:10px 20px 10px 18px;font-weight:700;font-size:.9rem;border-top-right-radius:14px;z-index:2}
+.pv .ph{margin-top:16px;display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:.92rem;color:#3c5445}
+.pv .ph a{font-weight:700;color:var(--forest)}
+
+/* green band */
+.green{background:var(--forest);color:#fff;position:relative;overflow:hidden;padding:110px 0}
+.green::before,.green::after{content:"";position:absolute;border-radius:50%;border:1.5px solid rgba(255,255,255,.12);pointer-events:none}
+.green::before{width:900px;height:900px;left:-300px;top:-250px}
+.green::after{width:600px;height:600px;left:-150px;top:-100px}
+.green .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center;position:relative;z-index:1}
+.g-vis{position:relative;max-width:470px}
+.g-vis .circ{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:10px solid rgba(255,255,255,.12)}
+.g-vis .circ img{width:100%;height:100%;object-fit:cover}
+.g-vis .tile{position:absolute;right:-30px;bottom:6%;background:#fff;border-radius:10px;padding:12px 16px 8px;box-shadow:0 24px 40px -20px rgba(0,0,0,.55);transform:rotate(-3deg)}
+.g-vis .tile img{width:200px;height:auto}
+.green .kicker{color:#8fe0a5}
+.green h2{font-size:clamp(2.2rem,4.4vw,3.8rem);margin:18px 0 22px}
+.green p{font-size:1.14rem;color:#d6ecd9;max-width:34rem}
+.green .row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;align-items:center}
+.green .row span{font-family:var(--display);font-weight:700;font-size:1.15rem;color:#8fe0a5}
+
+/* areas */
+.areas{padding:110px 0 100px;background:var(--cream)}
+.areas .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.areas h2{font-size:clamp(2.1rem,4vw,3.3rem);margin:16px 0 20px}
+.areas p{color:#3c5445;max-width:32rem}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.chips a{padding:11px 20px;border-radius:999px;background:#fff;border:1.5px solid var(--line);font-family:var(--display);font-weight:700;font-size:1.08rem;transition:.2s}
+.chips a:nth-child(3n+1){border-color:rgba(0,144,60,.5)}
+.chips a:nth-child(3n+2){border-color:rgba(0,108,180,.45)}
+.chips a:hover{background:var(--forest);color:#fff;border-color:var(--forest);transform:translateY(-2px)}
+.vans{position:relative}
+.vans img{width:100%;height:auto;border-radius:4px}
+.vans::before{content:"";position:absolute;inset:22px -22px -22px 22px;border:3px solid var(--leaf);border-radius:4px;z-index:-1}
+.vans span{position:absolute;left:-18px;top:28px;background:var(--azure);color:#fff;padding:9px 18px;font-weight:700;font-size:.88rem;letter-spacing:.04em;border-radius:3px}
+
+/* why */
+.why{background:var(--mist);padding:100px 0 110px;position:relative}
+.why .wrap{max-width:1100px}
+.why h2{font-size:clamp(1.1rem,1.5vw,1.3rem);font-family:var(--body);font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--azure);margin-bottom:28px;display:flex;align-items:center;gap:14px}
+.why h2::after{content:"";flex:1;height:1px;background:rgba(0,108,180,.3)}
+.flow{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.22;letter-spacing:-.02em;color:var(--ink)}
+.flow span{transition:color .25s}
+.flow span:nth-child(3n+1){color:var(--forest)}
+.flow span:nth-child(3n+2){color:var(--ink)}
+.flow span:nth-child(3n){color:var(--azure)}
+.flow span:hover{color:var(--leaf)}
+.flow svg{display:inline-block;width:.5em;height:.7em;margin:0 .45em;vertical-align:.04em;fill:var(--leaf)}
+
+/* feedback */
+.fb{background:#fff;padding:90px 0}
+.fb .wrap{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center;border-top:3px solid var(--ink);padding-top:44px}
+.fb h2{font-size:clamp(2rem,3.6vw,3rem);max-width:30rem}
+.fb .links{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+
+/* cta */
+.cta-b{background:var(--azure);color:#fff;position:relative;overflow:hidden}
+.cta-b .wrap{padding:84px 0;display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;position:relative;z-index:1}
+.cta-b h2{font-size:clamp(2.3rem,4.6vw,4rem)}
+.cta-b h2 small{display:block;font-family:var(--body);font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#bfe0f5;margin-bottom:16px}
+.cta-b .side{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.cta-b .ph{font-family:var(--display);font-weight:800;font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.01em}
+.cta-b .side p{color:#d6ecfa;font-size:.95rem}
+.cta-b::after{content:"";position:absolute;right:-180px;top:-260px;width:640px;height:640px;border-radius:50%;border:1.5px solid rgba(255,255,255,.2);box-shadow:0 0 0 70px rgba(255,255,255,.05),0 0 0 140px rgba(255,255,255,.04)}
+
+/* footer */
+.foot{background:#0c2616;color:#c7d9cc;padding:70px 0 0}
+.foot .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:50px;padding-bottom:50px}
+.foot .brand img{height:66px;width:auto;margin-bottom:18px}
+.foot .brand p{max-width:20rem;font-size:.95rem}
+.foot h3{font-family:var(--body);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#8fe0a5;margin-bottom:16px;font-weight:700}
+.foot li{margin-bottom:8px;font-size:.95rem}
+.foot li a:hover{color:#fff}
+.foot .tel{font-family:var(--display);font-weight:800;font-size:1.5rem;color:#fff;display:block;margin-bottom:10px}
+.foot .soc{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.foot .soc a{padding:7px 14px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-size:.84rem;font-weight:600}
+.foot .soc a:hover{background:#fff;color:var(--forest)}
+.foot .bar{border-top:1px solid rgba(255,255,255,.14);padding:20px 0;font-size:.88rem}
+.foot .bar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.foot .bar a{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.4)}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1180px){
+  .burger{display:flex}
+  .head .call{display:none}
+  .nav{position:fixed;inset:0 0 0 auto;width:min(360px,86vw);background:var(--cream);padding:96px 24px 24px;transform:translateX(105%);visibility:hidden;transition:transform .3s,visibility .3s;box-shadow:-20px 0 50px -20px rgba(0,0,0,.35);z-index:60}
+  .nav.open{transform:none;visibility:visible}
+  .nav ul{flex-direction:column;align-items:stretch;gap:2px}
+  .nav a{font-size:1.1rem;padding:13px 12px;border-bottom:1px solid var(--line);border-radius:0}
+  .burger{position:relative;z-index:70}
+}
+@media (max-width:980px){
+  .hero{padding:40px 0 100px}
+  .hero .wrap,.s-grid,.green .wrap,.areas .wrap,.cta-b .wrap,.fb .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:40px}
+  .art{min-height:0;height:470px}
+  .art .main{height:400px;width:86%}
+  .art .drop{width:190px;height:190px}
+  .badge{width:124px;height:124px;bottom:10px}
+  .rings{width:520px;height:520px;right:-120px}
+  .s-grid{gap:0}
+  .pv{display:none}
+  .idx .m-img{display:block;margin:6px 0 4px;aspect-ratio:16/9;border-radius:4px 40px 4px 4px;overflow:hidden}
+  .idx .m-img img{width:100%;height:100%;object-fit:cover}
+  .idx .body>div{padding-left:0}
+  .green .wrap{gap:50px}
+  .g-vis{margin:0 auto 20px}
+  .g-vis .tile{right:-10px}
+  .vans{margin:0 18px 22px 0}
+  .fb .links{justify-content:flex-start}
+  .foot .cols{grid-template-columns:1fr 1fr}
+  .foot .brand{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  :root{--wrap:min(1240px,100% - 32px)}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .logo img{height:48px}
+  .hero h1 em{white-space:normal}
+  .art{height:400px}
+  .art .main{height:330px}
+  .art .drop{width:150px;height:150px;border-width:7px}
+  .badge{width:104px;height:104px}
+  .badge b{font-size:1.5rem}
+  .badge svg text{font-size:12px}
+  .g-vis .tile img{width:150px}
+  .idx button{grid-template-columns:38px 1fr 28px}
+  .foot .cols{grid-template-columns:1fr}
+  .services{padding-bottom:80px}
+  .green,.areas,.why{padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><b>Emergency services</b> available at any time</span>
+    <a href="tel:4039736244">Call 403-973-6244</a>
+  </div>
+</div>
+
+<header class="head">
+  <div class="wrap">
+    <a class="logo" href="https://special-care.ca/home" aria-label="Special Care Carpet and Upholstery Cleaning, home">
+      <img src="images/logo.png" alt="Special Care Carpet and Upholstery Cleaning" width="175" height="58">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a class="on" href="https://special-care.ca/home">Home</a></li>
+        <li><a href="https://special-care.ca/green-cleaning-1">Green Cleaning</a></li>
+        <li><a href="https://special-care.ca/cloud-9">Cloud 9</a></li>
+        <li><a href="https://special-care.ca/testimonials">Testimonials</a></li>
+        <li><a href="https://special-care.ca/blog-1">Blog</a></li>
+        <li><a href="https://special-care.ca/contact-us-1">Contact Us</a></li>
+        <li><a href="https://special-care.ca/join-our-team-1">Join Our Team</a></li>
+        <li><a href="https://special-care.ca/janitorial-services">Janitorial Services</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-main call" href="https://special-care.ca/contact-us-1">Inquire Online</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker">Carpet &amp; Upholstery Cleaning</p>
+      <h1>Revitalize the carpets with professional cleaning in <em>Calgary</em> &amp; nearby area.</h1>
+      <p class="lead">Carpet cleaning in Calgary and the surrounding towns and small cities, for a fresh, hygienic environment in your home or business.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="https://special-care.ca/contact-us-1">Inquire Online
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-line" href="tel:4039736244">403-973-6244</a>
+      </div>
+      <div class="tag">
+        <img src="images/go-green-so-clean.jpg" alt="Go Green, So Clean" width="123" height="74">
+        <span>Green, eco-friendly products, safe for families, pets and the environment.</span>
+      </div>
+    </div>
+
+    <div class="art" aria-hidden="false">
+      <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="main"><img src="images/upholstery-cleaning.jpg" alt="Technician cleaning upholstery with a steam extraction wand" width="1254" height="774"></div>
+      <div class="drop"><img src="images/calgary.jpg" alt="Calgary skyline"></div>
+      <div class="badge">
+        <svg viewBox="0 0 150 150" aria-hidden="true"><defs><path id="c" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#c">Go Green · So Clean · Go Green · So Clean ·</textPath></text></svg>
+        <b><small>Since</small>1998</b>
+      </div>
+    </div>
+  </div>
+  <div class="swoosh" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#fff" d="M0,60 C260,10 520,10 760,48 C1020,88 1240,86 1440,34 L1440,90 L0,90 Z"/><path fill="none" stroke="#00903c" stroke-width="3" d="M0,60 C260,10 520,10 760,48 C1020,88 1240,86 1440,34"/></svg>
+  </div>
+</section>
+
+<!-- SERVICES INDEX -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="s-head rv">
+      <div>
+        <p class="kicker">Our Services</p>
+        <h2>Eight ways we take care of it.</h2>
+      </div>
+      <p>Choose a service to see what is included. Calling for something urgent? We answer at any time.</p>
+    </div>
+
+    <div class="s-grid">
+      <ol class="idx" id="idx">
+        <li class="open" data-img="emergency-water.jpg" data-cap="Emergency Services">
+          <button aria-expanded="true"><span class="n">01</span><span class="t">Emergency Services</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/emergency-water.jpg" alt="" loading="lazy"></div>
+            <p>Carpet cleaning, spot cleanup, sewer backup sanitization and deodorizing, basement flood water extraction, and mold control. Available at any time.</p>
+            <a href="tel:4039736244">Call 403-973-6244</a>
+          </div></div>
+        </li>
+        <li data-img="residential-carpet.jpg" data-cap="Residential Carpet Cleaning">
+          <button aria-expanded="false"><span class="n">02</span><span class="t">Residential Carpet Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/residential-carpet.jpg" alt="" loading="lazy"></div>
+            <p>Serving Calgary, Airdrie, Chestermere, Okotoks, Cochrane, Black Diamond and High River since 1998, using green, eco-friendly products.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="upholstery-cleaning.jpg" data-cap="Upholstery Cleaning">
+          <button aria-expanded="false"><span class="n">03</span><span class="t">Upholstery Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/upholstery-cleaning.jpg" alt="" loading="lazy"></div>
+            <p>Sofas, couches, dining chairs and mattresses, cleaned in Calgary, Airdrie, Chestermere, Okotoks, Cochrane, Black Diamond and High River.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="commercial.jpg" data-cap="Commercial">
+          <button aria-expanded="false"><span class="n">04</span><span class="t">Commercial</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/commercial.jpg" alt="" loading="lazy"></div>
+            <p>Recurring carpet cleaning programs for property management companies and businesses, with free consultations and quotes.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="area-rugs.jpg" data-cap="Area Rugs">
+          <button aria-expanded="false"><span class="n">05</span><span class="t">Area Rugs</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/area-rugs.jpg" alt="" loading="lazy"></div>
+            <p>Onsite rug cleaning with gentle green products.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="commercial.jpg" data-pos="80% 50%" data-cap="Commercial Carpet Cleaning">
+          <button aria-expanded="false"><span class="n">06</span><span class="t">Commercial Carpet Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/commercial.jpg" alt="" loading="lazy" style="object-position:80% 50%"></div>
+            <p>Carpet cleaning for businesses of all sizes.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="calgary.jpg" data-cap="Hard to Reach">
+          <button aria-expanded="false"><span class="n">07</span><span class="t">Hard to Reach</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/calgary.jpg" alt="" loading="lazy"></div>
+            <p>Portable units for apartments, condos and high-rises, plus move-in and move-out cleaning.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+        <li data-img="car-care.jpg" data-cap="Car Care">
+          <button aria-expanded="false"><span class="n">08</span><span class="t">Car Care</span><span class="pl"></span></button>
+          <div class="body"><div>
+            <div class="m-img"><img src="images/car-care.jpg" alt="" loading="lazy"></div>
+            <p>Car shampooing at your home, with package pricing alongside carpet cleaning.</p>
+            <a href="https://special-care.ca/contact-us-1">Inquire Online</a>
+          </div></div>
+        </li>
+      </ol>
+
+      <aside class="pv rv" aria-hidden="true">
+        <figure id="pv">
+          <img class="on" src="images/emergency-water.jpg" alt="">
+          <figcaption id="pvcap">Emergency Services</figcaption>
+        </figure>
+        <div class="ph"><span>Free consultations and quotes for commercial</span><a href="tel:4039736244">403-973-6244</a></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GREEN -->
+<section class="green" id="green">
+  <div class="wrap">
+    <div class="g-vis rv">
+      <div class="circ"><img src="images/area-rugs.jpg" alt="A puppy resting on a clean white rug" loading="lazy" style="object-position:30% 50%"></div>
+      <div class="tile"><img src="images/go-green-so-clean.jpg" alt="Go Green, So Clean" loading="lazy"></div>
+    </div>
+    <div class="rv">
+      <p class="kicker">Green Cleaning</p>
+      <h2>Why choose Green Cleaning?</h2>
+      <p>Our eco-friendly products are safe for families, pets and the environment. They break up stains for deep extraction, combined with steam from a truck-mounted unit.</p>
+      <div class="row">
+        <a class="btn btn-white" href="https://special-care.ca/green-cleaning-1">Learn more</a>
+        <span>Go Green...So Clean</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="rv">
+      <p class="kicker">Where we work</p>
+      <h2>Calgary and the towns around it.</h2>
+      <p>Residential carpet cleaning since 1998, for homes and businesses in Calgary and the surrounding towns and small cities.</p>
+      <div class="chips">
+        <a href="https://special-care.ca/contact-us-1">Calgary</a>
+        <a href="https://special-care.ca/contact-us-1">Airdrie</a>
+        <a href="https://special-care.ca/contact-us-1">Chestermere</a>
+        <a href="https://special-care.ca/contact-us-1">Okotoks</a>
+        <a href="https://special-care.ca/contact-us-1">Cochrane</a>
+        <a href="https://special-care.ca/contact-us-1">Black Diamond</a>
+        <a href="https://special-care.ca/contact-us-1">High River</a>
+      </div>
+    </div>
+    <div class="vans rv">
+      <img src="images/vans.jpg" alt="Two Special Care carpet and upholstery cleaning vans" loading="lazy">
+      <span>Truck-mounted steam</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="wrap rv">
+    <h2>Why Choose Us</h2>
+    <p class="flow">
+      <span>Top-rated Carpet Cleaning Services in Calgary</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Professional Carpet Cleaners for Homes &amp; Businesses</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Calgary's Best Carpet Cleaning Company, Expert Solutions</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Affordable and Reliable Carpet Cleaning in Calgary</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Trusted Carpet Cleaners Serving Calgary and Surrounding Areas</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Effective Stain Removal and Carpet Refresh in Calgary</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Specialized Carpet Cleaning Solutions for Calgary Residents</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Commercial and Residential Carpet Cleaning Calgary</span><svg viewBox="0 0 10 14" aria-hidden="true"><path d="M5 0C5 0 0 6 0 9.2a5 5 0 0 0 10 0C10 6 5 0 5 0Z"/></svg>
+      <span>Calgary's Eco-Friendly Carpet Cleaning Services</span>
+    </p>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section class="fb" id="feedback">
+  <div class="wrap rv">
+    <h2>Customer feedback that speaks for itself</h2>
+    <div class="links">
+      <a class="btn btn-main" href="https://special-care.ca/testimonials">Testimonials</a>
+      <a class="btn btn-line" href="https://www.yelp.com/biz/YmomZyz4jgMHOCyEioH1-A" target="_blank" rel="noopener">Yelp</a>
+      <a class="btn btn-line" href="https://www.facebook.com/specialcarecarpetcleaning" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-b">
+  <div class="wrap">
+    <h2><small>Go Green...So Clean</small>Ready for fresher carpets?</h2>
+    <div class="side">
+      <a class="btn btn-white" href="https://special-care.ca/contact-us-1">Inquire Online</a>
+      <a class="ph" href="tel:4039736244">403-973-6244</a>
+      <p>Emergency services available at any time.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap cols">
+    <div class="brand">
+      <img src="images/logo-white.png" alt="Special Care Carpet and Upholstery Cleaning">
+      <p>Go Green...So Clean. Carpet and upholstery cleaning in Calgary and nearby area since 1998.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/specialcarecarpetcleaning" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/special_care_cleaning" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.linkedin.com/company/special-care-carpet-cleaning" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.yelp.com/biz/YmomZyz4jgMHOCyEioH1-A" target="_blank" rel="noopener">Yelp</a>
+      </div>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="https://special-care.ca/home">Home</a></li>
+        <li><a href="https://special-care.ca/green-cleaning-1">Green Cleaning</a></li>
+        <li><a href="https://special-care.ca/cloud-9">Cloud 9</a></li>
+        <li><a href="https://special-care.ca/testimonials">Testimonials</a></li>
+        <li><a href="https://special-care.ca/blog-1">Blog</a></li>
+        <li><a href="https://special-care.ca/janitorial-services">Janitorial Services</a></li>
+        <li><a href="https://special-care.ca/join-our-team-1">Join Our Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a class="tel" href="tel:4039736244">403-973-6244</a>
+      <ul>
+        <li><a href="https://special-care.ca/contact-us-1">Contact Us</a></li>
+        <li>Emergency services available at any time</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bar">
+    <div class="wrap">
+      <span>&copy; 2026 Special Care - All Rights Reserved.</span>
+      <span><a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Design by Cleaning Digital.</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var b=document.getElementById('burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu')});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+
+  var items=[].slice.call(document.querySelectorAll('#idx li')),pv=document.getElementById('pv'),cap=document.getElementById('pvcap');
+  var imgs={};
+  function show(li){
+    items.forEach(function(x){var on=x===li;x.classList.toggle('open',on);x.querySelector('button').setAttribute('aria-expanded',on)});
+    var key=li.dataset.img+'|'+(li.dataset.pos||'');
+    [].forEach.call(pv.querySelectorAll('img'),function(i){i.classList.remove('on')});
+    if(!imgs[key]){var i=document.createElement('img');i.src='images/'+li.dataset.img;i.alt='';if(li.dataset.pos)i.style.objectPosition=li.dataset.pos;pv.insertBefore(i,cap);imgs[key]=i}
+    requestAnimationFrame(function(){imgs[key].classList.add('on')});
+    cap.textContent=li.dataset.cap;
+  }
+  var first=pv.querySelector('img');imgs[items[0].dataset.img+'|']=first;
+  items.forEach(function(li){
+    li.querySelector('button').addEventListener('click',function(){show(li)});
+    li.addEventListener('mouseenter',function(){if(window.innerWidth>980&&!li.classList.contains('open'))show(li)});
+  });
+
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+  }else{rv.forEach(function(el){el.classList.add('in')})}
+})();
+</script>
+</body>
+</html>
